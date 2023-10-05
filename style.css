@@ -34,7 +34,7 @@ h1{
 }
 
 #keptrans1{
-    asimation: keptrans1 2s linear 2s infinite alternate;
+    animation: keptrans1 2s linear 2s infinite alternate;
 }
 
 @keyframes keptrans1{
