@@ -1,0 +1,46 @@
+html{
+    background-color: black;
+    color: white;
+}
+
+.container{
+    width: 1612px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+.card{
+    width: 300px;
+    float: left;
+    margin: 10px;
+    border: 1px solid white;
+}
+
+.card h3, h6{
+    text-align: center;
+    margin: 5px;
+    padding: 5px
+}
+
+.card img{
+    margin: 10px auto 50px auto;
+    display: block;
+    border-radius: 220px;
+    width: 220px;
+    height: 220px;
+}
+
+#keptrans1{
+    asimation: keptrans1 2s linear 2s infinite alternate;
+}
+
+@keyframes keptrans1{
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
