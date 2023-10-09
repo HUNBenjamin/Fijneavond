@@ -33,8 +33,67 @@ h1{
     height: 220px;
 }
 
+.fijnecar{
+    margin: 30px 0px;
+    width: 250px;
+    clear: both;
+    display: flex;
+}
+
+.fijnecar.lmh{
+    animation: race 3s linear infinite alternate;
+}
+
+.fijnecar.lmp2{
+    animation: race 3.5s linear infinite alternate;
+}
+
+.fijnecar.lmp2abascal{
+    animation: raceabascal 7s linear infinite alternate;
+}
+
+.fijnecar.gt3{
+    animation: race 4.5s linear infinite alternate;
+}
+
 #keptrans1{
-    animation: keptrans1 2s linear 2s infinite alternate;
+    animation: keptrans1 2s linear infinite alternate;
+}
+
+#keptrans2{
+    animation: keptrans2 2s linear infinite alternate;
+}
+
+#keptrans3{
+    animation: keptrans3 2s linear infinite alternate;
+}
+
+#keptrans4{
+    animation: keptrans4 2s linear infinite alternate;
+}
+
+#keptrans5{
+    animation: keptrans5 2s linear infinite alternate;
+}
+
+#keptrans6{
+    animation: keptrans6 2s linear infinite alternate;
+}
+
+#keptrans7{
+    animation: keptrans7 2s linear infinite alternate;
+}
+
+#keptrans8{
+    animation: keptrans8 2s linear infinite alternate;
+}
+
+#keptrans9{
+    animation: keptrans9 2s linear infinite alternate;
+}
+
+#keptrans10{
+    animation: keptrans10 2s linear infinite alternate;
 }
 
 @keyframes keptrans1{
@@ -43,4 +102,86 @@ h1{
     50% {transform: rotate(180deg);}
     75% {transform: rotate(270deg);}
     100% {transform: rotate(360deg);}
+}
+
+@keyframes keptrans2{
+    0% {transform: scaleX(1);}
+    50% {transform: scaleX(-1);}
+    100% {transform: scaleX(1);}
+}
+
+@keyframes keptrans3{
+    0% {transform: scaleY(1);}
+    50% {transform: scaleY(-1);}
+    100% {transform: scaleY(1);}
+}
+
+@keyframes keptrans4{
+    0% {transform: rotateX(0deg);}
+    50% {transform: rotateX(3512deg);}
+    100% {transform: rotateX(0deg);}
+}
+
+@keyframes keptrans5{
+    0% {transform: skew(0deg);}
+    50% {transform: skew(360deg);}
+    100% {transform: skew(0deg);}
+}
+
+@keyframes keptrans6{
+    0% {transform: translate(0);}
+    20% {transform: translate(42px, 21px);}
+    40% {transform: translate(-42px, 21px);}
+    60% {transform: translate(-42px, -21px);}
+    80% {transform: translate(42px, -21px);}
+    100% {transform: translate(0);}
+}
+
+@keyframes keptrans7{
+    0% {transform: matrix(0);}
+    20% {transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);}
+    40% {transform: matrix(0.4, 0, 0.5, 1.2, 60, 10);}
+    60% {transform: matrix(0, 1, 1, 0, 0, 0);}
+    80% {transform: matrix(0.1, 1, -0.3, 1, 0, 0);}
+    100% {transform: matrix(0);}
+}
+
+@keyframes keptrans8{
+    0% {transform: skewY(0deg);}
+    50% {transform: skewY(180deg);}
+    100% {transform: skewY(0deg);}
+}
+
+@keyframes keptrans9{
+    0% {transform: rotateY(0deg);}
+    50% {transform: rotateY(1000deg);}
+    100% {transform: rotateY(0deg);}
+}
+
+@keyframes keptrans10{
+    0% {transform: rotateZ(0deg);}
+    50% {transform: rotateZ(2500deg);}
+    100% {transform: rotateZ(0deg);}
+}
+
+@keyframes race{
+    0%{transform: translateX(0px);}
+    45%{transform: translateX(1275px) scaleX(1);}
+    50%{transform: translateX(1500px) scaleX(-1);}
+    95%{transform: translateX(225px) scaleX(-1);}
+    100%{transform: translateX(0px) scaleX(1);}
+}
+
+@keyframes raceabascal{
+    0%{transform: translateX(0px);}
+    10%{transform: translateX(300px) scaleX(1);}
+    20%{transform: translateX(600px) scaleX(-1);}
+    30%{transform: translateX(900px) scaleX(1);}
+    40%{transform: translateX(1200px) scaleX(-1);}
+    50%{transform: translateX(1500px) scaleX(1);}
+    60%{transform: translateX(1200px) scaleX(-1);}
+    70%{transform: translateX(900px) scaleX(1);}
+    80%{transform: translateX(600px) scaleX(-1);}
+    90%{transform: translateX(300px) scaleX(1);}
+    100%{transform: translateX(0px) scaleX(-1);}
 }
