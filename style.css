@@ -1,5 +1,8 @@
 html{
     background-color: black;
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
 }
 
@@ -8,8 +11,78 @@ html{
     margin: 0 auto;
 }
 
+body{
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu{
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(167, 80, 0, 0.9);
+    width: 1612px;
+    position: sticky;
+    top: 0;
+}
+
+.menu:hover li a{
+    color: gray;
+    text-shadow: 0 0 10px black;
+}
+
+.menu ul{
+    
+    float: left;
+}
+
+.menu li{
+    float: right;
+    margin-right: 20px;
+    list-style-type: none;
+    font-size: xx-large;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0px 0px 7px white;
+}
+
+.menu li a{
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li a:hover{
+    text-shadow: none;
+    padding-right: 30px;
+    color: white;
+}
+
+.menu img{
+    width: 100px;
+    border-radius: 15px;
+    transition: border-radius 1s ;
+}
+
+.menu img:hover{
+    border-radius: 3px;
+    transition: border-radius 1s ;
+}
+
 h1{
     text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    animation: fijnecolorchange 3s linear infinite normal;
+}
+
+p{
+    animation: textskew 2s linear infinite normal;
 }
 
 .card{
@@ -41,59 +114,64 @@ h1{
 }
 
 .fijnecar.lmh{
-    animation: race 3s linear infinite alternate;
+    animation: race 3s linear infinite normal;
 }
 
 .fijnecar.lmp2{
-    animation: race 3.5s linear infinite alternate;
+    animation: race 3.5s linear infinite normal;
 }
 
 .fijnecar.lmp2abascal{
-    animation: raceabascal 7s linear infinite alternate;
+    animation: raceabascal 7s linear infinite normal;
 }
 
 .fijnecar.gt3{
-    animation: race 4.5s linear infinite alternate;
+    animation: race 4.5s linear infinite normal;
 }
 
-#keptrans1{
-    animation: keptrans1 2s linear infinite alternate;
+#keptrans1:hover{
+    animation: keptrans1 2s linear infinite normal;
 }
 
-#keptrans2{
+#keptrans2:hover{
     animation: keptrans2 2s linear infinite alternate;
 }
 
-#keptrans3{
+#keptrans3:hover{
     animation: keptrans3 2s linear infinite alternate;
 }
 
-#keptrans4{
+#keptrans4:hover{
     animation: keptrans4 2s linear infinite alternate;
 }
 
-#keptrans5{
+#keptrans5:hover{
     animation: keptrans5 2s linear infinite alternate;
 }
 
-#keptrans6{
+#keptrans6:hover{
     animation: keptrans6 2s linear infinite alternate;
 }
 
-#keptrans7{
+#keptrans7:hover{
     animation: keptrans7 2s linear infinite alternate;
 }
 
-#keptrans8{
+#keptrans8:hover{
     animation: keptrans8 2s linear infinite alternate;
 }
 
-#keptrans9{
+#keptrans9:hover{
     animation: keptrans9 2s linear infinite alternate;
 }
 
-#keptrans10{
-    animation: keptrans10 2s linear infinite alternate;
+#keptrans10:hover{
+    animation: keptrans10 2s linear infinite normal;
+}
+
+@keyframes fijnecolorchange{
+    0% {color: white;}
+    50% {color: rgb(255, 123, 0);}
 }
 
 @keyframes keptrans1{
@@ -184,4 +262,19 @@ h1{
     80%{transform: translateX(600px) scaleX(-1);}
     90%{transform: translateX(300px) scaleX(1);}
     100%{transform: translateX(0px) scaleX(-1);}
+}
+
+@keyframes radiusdisappear{
+    0%{border-radius: 15px;}
+    100%{border-radius: 3px;}
+}
+
+@keyframes radiusappear{
+    0%{border-radius: 15px;}
+    100%{border-radius: 3px;}
+}
+
+@keyframes textskew{
+    0% {transform: skew(-15deg);}
+    50% {transform: skew(15deg);}
 }
