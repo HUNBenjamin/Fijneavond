@@ -1,5 +1,4 @@
 html{
-    background-color: black;
     background-image: url("img/background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -90,6 +89,7 @@ p{
     float: left;
     margin: 10px;
     border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .card h3, h6{
@@ -111,6 +111,25 @@ p{
     width: 250px;
     clear: both;
     display: flex;
+}
+
+.resultnote{
+    min-width: 500px;
+    float: left;
+    margin: 10px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 1s;
+}
+
+.resultnote h2, h3{
+    padding-left: 20px;
+}
+
+.resultnote:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: background-color 1s;
 }
 
 .fijnecar.lmh{
@@ -277,4 +296,5 @@ p{
 @keyframes textskew{
     0% {transform: skew(-15deg);}
     50% {transform: skew(15deg);}
+    100% {transform: skew(-15deg);}  
 }
